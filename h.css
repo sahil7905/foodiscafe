@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+   background-color: #f0c4c4;
+   padding: 30px 0 0 20px;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+align-items: center;
+
+
+
+}
+.nav .logo h1{
+    padding-right: 20px;
+    font-weight: 600px;
+    font-family: sans-serif;//use for modle//
+    color: black;
+}
+.nav .logo b{
+    color: #ff511c;
+}
+.nav ul li{
+    margin-right: 30px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;//use for remove..//
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 500px;
+    font-family: sans-serif;
+    font: size 17px; 
+
+}
+.nav ul .active::after{
+    content:'';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c;
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+
+
+}
+
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.signin{
+    background: transparent;
+    border: none;
+}
+.signup{
+    background-color: #ff511c;
+    color:white;
+    border-radius: 5px;
+    height: 30px;
+    width: 90px;
+    border: none;
+    margin: 10px -100px;
+    position: absolute;
+
+
+}
+.content{
+    display: grid;
+    grid-template-columns:50% auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -120px;
+
+}
+/*content text*/
+.content .contentleft{
+    display: block;
+    width: 100%;
+
+}
+/* .content .contentleft .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+.content .contentleft .info h2{
+    font-weight: 600px;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    
+}
+.content .contentleft .info p{
+    font-size: 22px;
+    line-height:2pc ;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+
+}
+/*buttom*/
+
+.content .contentleft .explor{
+    padding: 10px 23px;
+    background-color: #ff511c;
+color: white;
+border-radius:10px ;
+border: none;
+}
+.content .content-right{
+    display: ;
+    width: 100%;
+}
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    border-radius: 60%;
+
+    animation: rotate 10s linear infinite;
+margin-right: 130px;
+margin-bottom: 85px;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 50%{
+        transform: rotate(50deg);
+        image-orientation: var(#ff511c);
+    } */
+    100%{
+        transform: rotate(360deg) ;
+    }
+}
+@media (rotate:40deg){
+    div{
+        background-color: #ff511c;
+    }
+
+}
+.card{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.card .card1{
+    margin-top: 20px;
+    border: 2px solid #e6ad9c;
+    border-radius: 22px;
+    width: 200px;
+    text-align: center;
+    border-top: none;
+
+    height: 250px;
+    background-color: white;
+    margin-left: 30px;
+    position: relative;
+    margin-left: -50px;
+    margin-top: -60px;
+    font-family: sans-serif;
+}
+.card .popular{
+    margin-top: -120px;
+    font-family: sans-serif;
+}
+.card .card1 .money{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: -5px;
+}
+.card .card4 .money .fa fa-plus-circle{
+    margin-left: 500px;
+}
+.card .card1 .B{
+    margin: 30px;
+    font-family: sans-serif;
+}
+.card .card1 .Bi{
+    height: 90px;
+    margin-top: -20px;
+    border: #f39c82;
+    border-radius: 50px;
+    box-shadow: 0px  8px 4px #f5b8a5;
+    
+}
+
+
+.card .card2{
+    margin-top: 20px;
+    border: 2px solid #e6ad9c;
+    border-radius: 22px;
+    width: 200px;
+    text-align: center;
+    border-top: none;
+    font-family: sans-serif;
+    height: 250px;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: -60px;
+}
+.card .card2 .money{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: -5px;
+}
+.card .card2 .B{
+    margin: 30px;
+}
+.card .card2 .Bi{
+    height: 90px;
+    margin-top: -20px;
+    border: #f39c82;
+    border-radius: 50px;
+    box-shadow: 0px  8px 4px #f5b8a5;
+    
+}
+.card .card3{
+    margin-top: 20px;
+    border: 2px solid #e6ad9c;
+    border-radius: 22px;
+    width: 200px;
+    text-align: center;
+    font-family: sans-serif;
+    border-top: none;
+    margin-top: -60px;
+    height: 250px;
+    background-color: white;
+    margin-left: 60px;
+}
+.card .card3 .money{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: -5px;
+}
+.card .card3 .B{
+    margin: 30px;
+}
+.card .card3 .Bi{
+    height: 90px;
+    margin-top: -20px;
+    border: #f39c82;
+    border-radius: 50px;
+    box-shadow: 0px  8px 4px #f5b8a5;
+    
+}
+.card .card4{
+    margin-top: 20px;
+    border: 2px solid #e6ad9c;
+    border-radius: 22px;
+    width: 200px;
+    text-align: center;
+    border-top: none;
+    margin-top: -60px;
+    font-family: sans-serif;
+    height: 250px;
+    background-color: white;
+    margin-left: 30px;
+}
+.card .card4 .money{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: -5px;
+}
+.card .card4 .B{
+    margin: 30px;
+}
+.card .card4 .Bi{
+    height: 120px;
+    margin-top: -50px;
+    border: #f3d9d1;
+    border-radius: 50%;
+        box-shadow: 0px  8px 4px #f5b8a5;}
+        .burge{
+            padding: 0;
+            margin: 0;
+           width: 100%; 
+           height: 500px;
+        display: flex;
+        font-family: sans-serif;
+           margin-top: 40px;
+           border-radius: 10px 0 0 px;
+           box-shadow: 0 0 10px 0;
+        }
+.burge .bb{
+    margin: 40px;
+    
+}
+.burge .bbb {
+    width: 600px;
+    
+    border-top-right-radius: 50%;
+    
+}
+.burge .con .H{
+    padding-left: 20px;
+    font-size: 60px;
+    margin-top: 20px;
+}
+.burge .con .button{
+    margin-top: 40px;
+    background-color: #ff511c;
+    text-align: center;
+    padding: 0 8px;
+    border: none;
+border-radius: 5px;
+height: 40px;
+}
+.p{
+    margin-top: 20px;
+}
+.burge .add{
+display: flex;
+width: 300px;
+}
+.burge .add .m{
+    margin-bottom: 30px;
+    color : #36bd00; 
+    margin: 50px;
+    margin-left: 20px;
+    
+   
+}
+.off{
+    position: absolute;
+    text-decoration:2px line-through;
+    margin-left: 210px;
+    margin-top: 30px;
+
+}
+.mm{
+    position: relative;
+text-decoration: none;
+margin-left: 40px;
+margin-top: 30px;
+color: #36bd00;
+}
+.all{
+    padding: 0;
+    display: flex;
+    
+  width: 100px;
+    height: 400px;
+
+    
+
+}
+ .photo{
+    position: relative;
+    height: 10px;
+
+}
+.all .photo .p{
+    height: 40px;
+    margin-bottom: 10px;
+}
+.all .photo .pp{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.all .photo .ppp{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.all .photo .pppp{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.sale{
+    position: absolute;
+    margin: 50px 300px ;}
+    .logoo{
+        position: absolute;
+        margin-top: 160px;
+        margin-left: 350px;
+    }
+    .logoo .is{
+        color: #1cdb3f;
+    }
+    .con{
+        
+        
+    
+    }
+    .non{
+        background-color: rgb(249, 133, 133);
+        width: 100%;
+        height: 400px;
+        display: flex;
+        box-shadow: 0 0 5px ;
+        
+    }
+    .nonimg{
+        width: 400px;
+        height: 400px;
+        border-radius: 0 150px 10px 5px;
+    }
+    .nonc{
+        margin: 20px 0 0 150px;
+        font-family: sans-serif;
+    }
+    .nono{
+        position: absolute;
+margin: 300px 0 0 600px ;
+
+
+    }
+    .nonoo{
+        padding: 10px 10px;
+        border: none;
+        background-color: #ff511c;
+        border-radius: 10px;
+    }
+    .mmm{
+        position: relative;
+        margin: -30px 0 0 110px;
+        color: #1cdb3f;
+        
+    
+    }
+    .off-off{
+       margin: -35px 152px; 
+       text-decoration: line-through;
+       font-family: sans-serif;
+    }
+    .mmmm{
+       margin: 10px 205px ; 
+    }
+    .veg{
+    height: 400px;
+    background-color: #ea7a57;
+    }
+    .veg .vegimg{
+        position: absolute;
+    margin: 0px 48%;
+        height: 400px;
+        width: 50%;
+        border-radius: 150px 0 0 0;
+    }
+    
+.vegc{
+    height: 400px;
+    width: auto;
+    box-shadow: 0 0 10px;
+}
+.vegc .nonw{
+
+}
+.about{
+    display: flex;
+    margin: 0  px;
+    font-family: sans-serif;
+    background-color: rgb(42, 31, 31);
+    color: white;
+    width: 100%;
+    margin: 0 px;
+    
+}.about h3{
+    margin: 10px 50px;
+
+}
+.about p{
+    position: relative;
+    margin-top: 10px 90px;
+    margin-left: 60px;
+}
+.l{
+    font-family: sans-serif;
+    background-color: #00bd8b;
+}
+.boy{
+    width: 100%;
+    height: 600px;
+}
+.photof{
+    position: absolute;
+    margin:-170px 480px;
+    font-family: sans-serif;
+    font-size: xxx-large;
+}
